@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel"/>
+
+<h2>Great offer</h2>
+<h4>One soft toy just for you</h4>
+
+<div class="row">
+	
+	@foreach (var softToy in Model.SoftToysGreatOffer)
+	{
+		<partial name="_SoftToyCard" model="softToy"/>
+	}
+
+</div>

@@ -1,0 +1,17 @@
+﻿@model NotFoundViewModel
+
+@{
+	ViewBag.Title = "404 Error";
+}
+
+<div class="alert alert-danger">
+ <h4>404 Not Found Error</h4>
+ <hr />
+ <h5>
+		@Model.EntityName with Id = @Model.EntityId cannot be found
+ </h5>
+</div>
+
+<a asp-action="Index" asp-controller="Home" class="btn btn-info"> 
+	Click here to navigate to the home page
+</a>

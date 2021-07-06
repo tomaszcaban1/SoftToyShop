@@ -1,0 +1,7 @@
+﻿@model SoftToyListViewModel
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var softToy in Model.SoftToys)
+{
+    <partial name="_SoftToyCard" model="softToy"/>
+}

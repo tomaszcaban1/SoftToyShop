@@ -1,0 +1,10 @@
+﻿@model IEnumerable<SoftToy>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@foreach (var softToy in Model)
+{
+    <partial name="_SoftToyAdminCard" model="softToy"/>
+}
+
